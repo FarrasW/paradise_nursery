@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a, button{
+    text-decoration: none;
+    color: #ff1c68;
+	cursor: pointer;
+	font-size: 17px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 	
+}
+.brand-group{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5em;
+}
+.logo{
+    width: 80px;
+	height: auto;
+}
+.company-name{
+    font-family: sans-serif;
+	font-weight: 700;
+}
+.navlinks{
+    list-style: none;
+}
+.navlinks li{
+    display: inline-block;
+	padding: 0px 20px;
+	align-items: center;
+	justify-content: center;
+}
+.navlinks li a{
+    transition: all 0.3s ease 0s;
+	text-transform: uppercase;
+}
+.navlinks li a:hover{
+    color: #ff6699;
+	padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+}
+header .detail-button{
+    padding: 10px;
+	background: #ff1c68;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+}
+header .detail-button:hover{
+    background: #ff6699; 
+}
+section{
+    margin: 100px;
+}
+h1{
+    text-align: center;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #777;
+}
+h3{
+    text-transform: uppercase;
+    font-family: sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.container{
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.row{
+    display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	gap: 1.5em;
+}
+.tumbnail{
+    width: 300px;
+	height: 300px;
+}
+.col{
+    flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-top: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+span{
+    font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #f20560;
+}
+.button-group{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.addBtn{
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	background: #1dbf69;
+}
+.addBtn:hover{
+    background: #16874b;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="greenshop.html">
+<div class="brand-group">
+<img class="logo" src="pn_logo.png">
+<p class="company-name">Paradise Nursery</p>
+</div>
+</a>
+<nav class="navbar">
+<ul class="navlinks">
+<li><a href="#purifying">Purifying Plants</a></li>
+<li><a href="#aromatic">Aromatic Plants</a></li>
+</ul>
+</nav>
+<a href="cart.html"><button class="detail-button"><i class="fa fa-shopping-cart"></i></button></a>
+</header>
+
+<section class="purifying" id="purifying">
+<h1>Purifying Plants Selection</h1>
+<div class="container">
+<div class="row">
+<div class="col">
+<img class="tumbnail" src="purify1.jpg">
+<h3>Snake Plant</h3>
+<span>$15</span>
+<p><i>Produces oxygen at night, improving air quality.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="purify2.jpg">
+<h3>Spider Plant</h3>
+<span>$12</span>
+<p><i>Filters formaldegyde and xylene from the air.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="purify3.jpg">
+<h3>Peace Lily</h3>
+<span>$18</span>
+<p><i>Removes mold spores and purifies the air.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="purify4.jpg">
+<h3>Boston Fern</h3>
+<span>$15</span>
+<p><i>Removes indoor pollutants.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="purify5.jpg">
+<h3>Rubber Plant</h3>
+<span>$13</span>
+<p><i>Effectively removes spores and bacteria from air.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="purify6.jpg">
+<h3>Aloe Vera</h3>
+<span>$13</span>
+<p><i>Absorbs toxins and elemental pollutants.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="aromatic" id="aromatic">
+<h1>Aromatic Plant Selection</h1>
+<div class="container">
+<div class="row">
+<div class="col">
+<img class="tumbnail" src="aromatic1.jpg">
+<h3>Lavender</h3>
+<span>$20</span>
+<p><i>Calming scent used in aromatheraphy.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="aromatic2.jpg">
+<h3>Jasmine</h3>
+<span>$18</span>
+<p><i>Sweet fragrance promotes relaxation.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="aromatic3.jpg">
+<h3>Rosemary</h3>
+<span>$15</span>
+<p><i>Invigorating scents often used in cooking.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="aromatic4.jpg">
+<h3>Mint</h3>
+<span>$12</span>
+<p><i>Has a calming scent and improves respiratory symptomps.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="aromatic5.jpg">
+<h3>Lemon Balm</h3>
+<span>$14</span>
+<p><i>Its scent helps relieve stress and anxiety.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+
+<div class="col">
+<img class="tumbnail" src="aromatic6.jpg">
+<h3>Hyacinth</h3>
+<span>$22</span>
+<p><i>Has a soothing and calming scent.</i></p>
+<div class="button-group">
+<button class="addBtn">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
